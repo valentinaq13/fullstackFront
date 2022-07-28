@@ -15,7 +15,7 @@ function App() {
 
   const handleSubmit = (evento) => {
     evento.preventDefault();
-    axios.get(`http://localhost:3001/iecho?text=${input}`).then(res => {
+    axios.get(`https://fierce-gorge-29327.herokuapp.com/iecho?text=${input}`).then(res => {
       const resp = res.data;
       setState(resp);
       console.log(resp)
